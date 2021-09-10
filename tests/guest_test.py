@@ -17,5 +17,11 @@ class TestGuest(unittest.TestCase):
         self.assertEqual(100, self.guest.wallet)
 
 # Extension.. 
+
+# Test guest wallet decreased by entry fee..
+
+    def test_customer_wallet_decreased_by_entry_fee(self):
+        self.venue.pay_entry(self.venue.entry_fee)
+        
 # Test a guest has favourite song..
 

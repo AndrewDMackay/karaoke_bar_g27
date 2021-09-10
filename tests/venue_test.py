@@ -7,8 +7,9 @@ from src.guest import Guest
 
 class TestVenue(unittest.TestCase):
     def setUp(self):
-        self.venue = Venue("Steve's Karaoke", 1000)
+        self.venue = Venue("Steve's Karaoke", 1000, 10)
         self.room = Room(10)
+        
 
 # Test does a venue have a name..
 
@@ -32,5 +33,13 @@ class TestVenue(unittest.TestCase):
 
     def test_venue_has_till(self):
         self.assertEqual(1000, self.venue.till)
+
+# Test till increased by entry fee..
+
+    def test_till_increased_by_entry_fee(self):
+        self.venue.pay_entry(self.venue.entry_fee)
+        self.assertEqual(1010, self.venue.till)
+
+
 
 
