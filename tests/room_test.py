@@ -7,9 +7,9 @@ from src.guest import Guest
 class TestRoom(unittest.TestCase):
     def setUp(self):
         self.room = Room(2)
-        self.guest1 = Guest("Steve", 100)
-        self.guest2 = Guest("Craig", 75)
-        self.guest3 = Guest("Stan", 50)
+        self.guest1 = Guest("Steve", 100, "Lady In Red")
+        self.guest2 = Guest("Craig", 75, "Dont Pay The Ferryman")
+        self.guest3 = Guest("Stan", 50, "Missing You")
         self.song = Song("Lady In Red", "Chris De Burgh")
 
 # Test a room has capacity..
