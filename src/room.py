@@ -6,10 +6,7 @@ class Room:
         self.songs = []
         self.guests = []
 
-    # def check_in_guest(self, guest):
-    #     self.guests.append(guest)
-
-    # Extension..
+    # Extensions..
 
     def check_in_guest(self, guest):
         if len(self.guests) == self.capacity:

@@ -9,7 +9,7 @@ class Guest:
     def remove_entry_fee(self, entry_fee):
         self.wallet -= entry_fee
 
-         # Advanced Extensions..
+    # Advanced Extensions 1..
 
     def cheer_for_favourite_song(self, songs):
         for song in songs:
@@ -17,3 +17,12 @@ class Guest:
                 return "Woo hoo!"
             else:
                 pass
+
+    # Advanced Extensions 2..
+
+    def buy_drink(self, drink):
+        if self.sufficient_funds(drink):
+            self.wallet -= drink.price
+    
+    def sufficient_funds(self, drink):
+        return self.wallet >= drink.price

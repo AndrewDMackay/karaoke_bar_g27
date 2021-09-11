@@ -30,12 +30,14 @@ class TestGuest(unittest.TestCase):
         self.guest1.remove_entry_fee(self.venue.entry_fee)
         self.assertEqual(90, self.guest1.wallet)
         
-# Advanced extensions..
+# Advanced extension 1..
 
 # Test a guest has favourite song..
 
     def test_guest_has_favourite_song(self):
         self.assertEqual("Lady In Red", self.guest1.favourite_song)
+
+# Test a guest cheers for their favourite song..
 
     def test_guest_cheers_for_their_favourite_song(self):
         self.assertEqual("Woo hoo!", self.guest1.cheer_for_favourite_song(self.songs))

@@ -3,6 +3,7 @@ import unittest
 from src.room import Room
 from src.song import Song
 from src.guest import Guest
+from src.drink import Drink
 
 class TestRoom(unittest.TestCase):
     def setUp(self):
@@ -11,6 +12,7 @@ class TestRoom(unittest.TestCase):
         self.guest2 = Guest("Craig", 75, "Dont Pay The Ferryman")
         self.guest3 = Guest("Stan", 50, "Missing You")
         self.song = Song("Lady In Red", "Chris De Burgh")
+        self.drink = Drink("Wine", 5.00)
 
 # Test a room has capacity..
     
@@ -68,14 +70,8 @@ class TestRoom(unittest.TestCase):
         self.room.check_in_guest(self.guest3)
         self.assertEqual(2, len(self.room.guests))
 
-# Advanced extensions..
+# Advanced extensions 2..
 
-# Test does a guest cheer for their favourite song..
 
-    # def test_guest_cheers_for_their_favourite_song(self):
-    #     self.room.check_in_guest(self.guest1)
-    #     self.room.add_song(self.song)
-    #     self.guest.cheer_for_favourite_song(self.song)
-    #     self.assertEqual()
 
 
