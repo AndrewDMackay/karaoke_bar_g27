@@ -1,3 +1,4 @@
+
 class Venue:
     
     def __init__(self, name, till, entry_fee):

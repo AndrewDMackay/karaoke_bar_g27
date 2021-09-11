@@ -58,7 +58,7 @@ class TestRoom(unittest.TestCase):
         self.room.add_song(self.song)
         self.assertEqual(self.song, self.room.songs[0])
 
-# Extension..
+# Extensions..
 
 #  Test does a room stop checking in guests at capcity..
 
@@ -68,4 +68,14 @@ class TestRoom(unittest.TestCase):
         self.room.check_in_guest(self.guest3)
         self.assertEqual(2, len(self.room.guests))
 
-# Check a guest responds to favourite song..
+# Advanced extensions..
+
+# Test does a guest cheer for their favourite song..
+
+    # def test_guest_cheers_for_their_favourite_song(self):
+    #     self.room.check_in_guest(self.guest1)
+    #     self.room.add_song(self.song)
+    #     self.guest.cheer_for_favourite_song(self.song)
+    #     self.assertEqual()
+
+

@@ -31,3 +31,4 @@ if __name__ == '__main__':
 # (Return a string like "Whoo!")
 # Rooms can keep track of the entry fees/spending of the guests - maybe add a bar tab/bar class?
 # Add anything extra you think would be good to have at a karaoke venue!
+
