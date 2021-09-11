@@ -31,10 +31,14 @@ class TestBar(unittest.TestCase):
       self.bar.increase_tab_by_drink(self.drink1)
       self.assertEqual(5.00, self.bar.tab)
 
-# Test the bar can print an itemised drinks tab..
-   def test_bar_can_print_itemised_tab(self):
+# Test the bar can return a drinks tab total..
+   def test_bar_can_print_tab(self):
       self.bar.add_drink(self.drink1)
       self.bar.increase_tab_by_drink(self.drink1)
       self.assertEqual(5.00, self.bar.print_tab())
+
+ # Test the bar can return an itemised drinks tab..
+   def test_bar_can_print_itemised_tab(self):
+      self.assertEqual([], self.bar.print_itemised_tab())
   
    

@@ -16,6 +16,9 @@ class Bar:
     def print_tab(self):
         return self.tab
 
+    def print_itemised_tab(self):
+        return self.drinks
+
         
         
 
